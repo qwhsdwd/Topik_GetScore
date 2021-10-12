@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="format-detection" content="telephone=no">
+	<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<meta HTTP-EQUIV="Expires" CONTENT="0">
+	<link rel="stylesheet" href="static/css/index.css"></link>
+	<title>成绩查询</title>
+</head>
+<body>
+	<div class="container">
+		<section id="querySection">
+			<form class="form-info">
+	            <div class="input-group">
+	                <div class="input-row">
+	                    <label for="examOrder">考生批次<font color="red">&nbsp;*</font></label>
+	                    <select id="examOrder"  style="width: 80px">
+	                    	<option>请选择</option>
+	                    </select>
+	                </div>
+	                <div class="input-row">
+	                    <label for="examSeriesNumber">准考证号<font color="red">&nbsp;*</font></label>
+	                    <input type="number"  style="width: 80px" id="examSeriesNumber" placeholder="请输入"/>
+	                </div>
+	                <div class="input-row">
+	                    <label>出生日期<font color="red">&nbsp;*</font></label>
+	                    <select id="year"  style="width: 100px">
+	                    </select>-
+	                    <select id="month"  style="width: 60px">
+	                    </select>-
+	                    <select id="day"  style="width: 60px">
+	                    </select>
+	                </div>
+	            </div>
+	        </form>
+	        <a class="btn btn-green block" id="queryInfo">查询</a>
+	        <div class="center-block">
+	      		<h1>关注"在韩生"</h1>
+            	<img src="static/images/mypic.jpg" style="width: 200px;height: 200px"/>
+            </div>
+		</section>
+		<section  id="resultSection">
+			<form class="form-info" id="result">
+	            
+	        </form>
+	        <a class="btn btn-green block" onclick='javaScript:$("#resultSection").hide(); $("#querySection").show();'>确定</a>
+		</section>
+	</div>     
+  </body>
+  <script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="static/js/index.js"></script>
+</html>
